@@ -11,10 +11,10 @@ const Header = () => {
       <Top>
         <Logo source={logo} />
         <Title>
-          <Text>Adailson</Text>
+          <Text style={{color: 'white', fontSize: 18}}>Adailson</Text>
         </Title>
       </Top>
-      <Icon name="keyboard-arrow-down" size={20} color="#FFF" />
+      <Icon name="keyboard-arrow-down" color="#fff" size={16} />
     </Container>
   );
 };

@@ -9,6 +9,7 @@ const Main = () => {
   return (
     <Container>
       <Header />
+      <Tabs />
     </Container>
   );
 };

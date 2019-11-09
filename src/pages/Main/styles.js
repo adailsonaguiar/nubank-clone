@@ -6,7 +6,7 @@ export const Container = styled.View`
   justify-content: center;
 `;
 
-export const Content = styled.View`
+export const Card = styled.View`
   flex: 1;
   max-height: 400px;
   z-index: 5;
@@ -14,15 +14,8 @@ export const Content = styled.View`
   border-radius: 4px;
   margin: 0 20px;
   height: 100%;
+  top: 380px;
 `;
-
-/* export const Card = styled.View`
-  flex: 1;
-  background: white;
-  border-radius: 4px;
-  margin: 0 20px;
-  height: 100%;
-`; */
 
 export const CardHeader = styled.View`
   flex-direction: row;

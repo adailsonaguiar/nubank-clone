@@ -3,8 +3,9 @@ import {Container} from './styles';
 import Header from '../../components/Header';
 import Tabs from '../../components/Tabs';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import Menu from '../../components/Menu';
 import {
-  Content,
+  Card,
   CardHeader,
   CardContent,
   CardFooter,
@@ -12,13 +13,13 @@ import {
   Title,
   Annotation,
 } from './styles';
-import {View, Text} from 'react-native';
 
 const Main = () => {
   return (
     <Container>
       <Header />
-      <Content>
+      <Menu />
+      <Card>
         <CardHeader>
           <Icon name="attach-money" size={28} color="#666" />
           <Icon name="visibility-off" size={28} color="#666" />
@@ -30,7 +31,7 @@ const Main = () => {
         <CardFooter>
           <Annotation>Transferência enviada no valor de R$ 132,90</Annotation>
         </CardFooter>
-      </Content>
+      </Card>
       <Tabs />
     </Container>
   );

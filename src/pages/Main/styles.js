@@ -6,15 +6,19 @@ export const Container = styled.View`
   justify-content: center;
 `;
 
-export const Card = styled.View`
+export const Content = styled.View`
   flex: 1;
   max-height: 400px;
   z-index: 5;
+`;
+
+export const Card = styled.View`
+  flex: 1;
   background: white;
   border-radius: 4px;
   margin: 0 20px;
   height: 100%;
-  top: 380px;
+  top: 150px;
 `;
 
 export const CardHeader = styled.View`

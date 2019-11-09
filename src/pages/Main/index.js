@@ -12,26 +12,29 @@ import {
   Description,
   Title,
   Annotation,
+  Content,
 } from './styles';
 
 const Main = () => {
   return (
     <Container>
       <Header />
-      <Menu />
-      <Card>
-        <CardHeader>
-          <Icon name="attach-money" size={28} color="#666" />
-          <Icon name="visibility-off" size={28} color="#666" />
-        </CardHeader>
-        <CardContent>
-          <Title>Saldo Disponível</Title>
-          <Description>RS 543.298,43</Description>
-        </CardContent>
-        <CardFooter>
-          <Annotation>Transferência enviada no valor de R$ 132,90</Annotation>
-        </CardFooter>
-      </Card>
+      <Content>
+        <Menu />
+        <Card>
+          <CardHeader>
+            <Icon name="attach-money" size={28} color="#666" />
+            <Icon name="visibility-off" size={28} color="#666" />
+          </CardHeader>
+          <CardContent>
+            <Title>Saldo Disponível</Title>
+            <Description>RS 543.298,43</Description>
+          </CardContent>
+          <CardFooter>
+            <Annotation>Transferência enviada no valor de R$ 132,90</Annotation>
+          </CardFooter>
+        </Card>
+      </Content>
       <Tabs />
     </Container>
   );

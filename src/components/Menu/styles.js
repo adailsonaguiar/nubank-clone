@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 import {StyleSheet} from 'react-native';
 
-export const Container = styled.View`
+export const Container = styled.ScrollView`
   margin: 0 30px;
 `;
 export const Code = styled.View`

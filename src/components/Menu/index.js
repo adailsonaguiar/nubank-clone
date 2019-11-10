@@ -22,6 +22,26 @@ const Menu = () => {
           <Icon name="credit-card" size={20} color="#fff" />
           <NavText>Configurar cartão</NavText>
         </NavItem>
+        <NavItem>
+          <Icon name="mobile" size={20} color="#fff" />
+          <NavText>Configurações do app</NavText>
+        </NavItem>
+        <NavItem>
+          <Icon name="mobile" size={20} color="#fff" />
+          <NavText>Configurações do app</NavText>
+        </NavItem>
+        <NavItem>
+          <Icon name="mobile" size={20} color="#fff" />
+          <NavText>Configurações do app</NavText>
+        </NavItem>
+        <NavItem>
+          <Icon name="mobile" size={20} color="#fff" />
+          <NavText>Configurações do app</NavText>
+        </NavItem>
+        <NavItem>
+          <Icon name="mobile" size={20} color="#fff" />
+          <NavText>Configurações do app</NavText>
+        </NavItem>
       </Nav>
     </Container>
   );

@@ -38,7 +38,7 @@ const Main = () => {
     <Container>
       <Header />
       <Content>
-        <Menu />
+        <Menu translateY={translateY} />
         <PanGestureHandler
           onGestureEvent={animatedEvent}
           onHandlerStateChange={onHandlerStateChange}>
@@ -47,8 +47,8 @@ const Main = () => {
               transform: [
                 {
                   translateY: translateY.interpolate({
-                    inputRange: [0, 380],
-                    outputRange: [0, 380],
+                    inputRange: [-150, 0, 380],
+                    outputRange: [-23, 0, 380],
                     extrapolate: 'clamp',
                   }),
                 },

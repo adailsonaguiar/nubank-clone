@@ -46,7 +46,11 @@ const Main = () => {
             style={{
               transform: [
                 {
-                  translateY: translateY,
+                  translateY: translateY.interpolate({
+                    inputRange: [0, 380],
+                    outputRange: [0, 380],
+                    extrapolate: 'clamp',
+                  }),
                 },
               ],
             }}>

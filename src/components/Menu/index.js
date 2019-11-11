@@ -2,19 +2,8 @@ import React from 'react';
 import {Container, Code, Nav, NavItem, NavText} from './styles';
 /* import QRCode from 'react-native-qrcode'; */
 import Icon from 'react-native-vector-icons/FontAwesome';
-import {Animated} from 'react-native';
 
 const Menu = ({translateY}) => {
-  const animatedEvent = new Animated.event(
-    [
-      {
-        nativeEvent: {
-          translationY: translateY,
-        },
-      },
-    ],
-    {useNativeDriver: true},
-  );
   return (
     <Container
       style={{

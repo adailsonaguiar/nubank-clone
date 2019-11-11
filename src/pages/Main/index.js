@@ -70,7 +70,7 @@ const Main = () => {
           </Card>
         </PanGestureHandler>
       </Content>
-      <Tabs />
+      <Tabs translateY={translateY} />
     </Container>
   );
 };

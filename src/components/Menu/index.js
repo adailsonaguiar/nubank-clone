@@ -32,22 +32,6 @@ const Menu = ({translateY}) => {
           <Icon name="mobile" size={20} color="#fff" />
           <NavText>Configurações do app</NavText>
         </NavItem>
-        <NavItem>
-          <Icon name="mobile" size={20} color="#fff" />
-          <NavText>Configurações do app</NavText>
-        </NavItem>
-        <NavItem>
-          <Icon name="mobile" size={20} color="#fff" />
-          <NavText>Configurações do app</NavText>
-        </NavItem>
-        <NavItem>
-          <Icon name="mobile" size={20} color="#fff" />
-          <NavText>Configurações do app</NavText>
-        </NavItem>
-        <NavItem>
-          <Icon name="mobile" size={20} color="#fff" />
-          <NavText>Configurações do app</NavText>
-        </NavItem>
       </Nav>
     </Container>
   );

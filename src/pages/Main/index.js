@@ -19,6 +19,7 @@ import {
 } from './styles';
 
 const Main = () => {
+  let offset = 0;
   const translateY = new Animated.Value(0);
 
   const animatedEvent = new Animated.event(
@@ -32,7 +33,32 @@ const Main = () => {
     {useNativeDriver: true},
   );
 
-  const onHandlerStateChange = event => {};
+  const onHandlerStateChange = event => {
+    if (event.nativeEvent.oldState === State.ACTIVE) {
+      let opened = false;
+      const {translationY} = event.nativeEvent;
+
+      offset += translationY;
+
+      if (translationY >= 100) {
+        opened = true;
+      } else {
+        translateY.setValue(offset);
+        translateY.setOffset(0);
+        offset = 0;
+      }
+
+      Animated.timing(translateY, {
+        toValue: opened ? 380 : 0,
+        duration: 200,
+        useNativeDriver: true,
+      }).start(() => {
+        offset = opened ? 380 : 0;
+        translateY.setOffset(offset);
+        translateY.setValue(0);
+      });
+    }
+  };
 
   return (
     <Container>
@@ -60,7 +86,7 @@ const Main = () => {
             </CardHeader>
             <CardContent>
               <Title>Saldo Disponível</Title>
-              <Description>RS 1.000.000,00</Description>
+              <Description>RS 1.389.399,00</Description>
             </CardContent>
             <CardFooter>
               <Annotation>

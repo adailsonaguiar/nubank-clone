@@ -2,9 +2,25 @@ import React from 'react';
 import {Text} from 'react-native';
 import {Container, TabsContainer, TabItem, TabText} from './styles';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-const Tabs = () => {
+
+const Tabs = ({translateY}) => {
   return (
-    <Container>
+    <Container
+      style={{
+        transform: [
+          {
+            translateY: translateY.interpolate({
+              inputRange: [0, 380],
+              outputRange: [0, 39],
+              extrapolate: 'clamp',
+            }),
+          },
+        ],
+        opacity: translateY.interpolate({
+          inputRange: [0, 380],
+          outputRange: [1, 0],
+        }),
+      }}>
       <TabsContainer>
         <TabItem>
           <Icon name="person-add" size={24} color="#FFF" />
